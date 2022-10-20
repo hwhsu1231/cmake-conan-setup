@@ -1,0 +1,7 @@
+file(GLOB subdirs "${CMAKE_CURRENT_SOURCE_DIR}/*")
+foreach(subdir ${subdirs})
+  if(IS_DIRECTORY "${subdir}" AND EXISTS "${subdir}/CMakeLists.txt")
+    get_filename_component(subdir_name "${subdir}" NAME)
+    add_subdirectory(${subdir_name})
+  endif()
+endforeach()
