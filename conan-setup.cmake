@@ -39,7 +39,7 @@ if(is_multi_config)
   set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING
     "Specifies the available build types (configurations) on multi-config generators.")
 endif()
-set(CMAKE_CONAN_OUTPUT_FOLDER "${CMAKE_BINARY_DIR}/conan-dependencies" CACHE FILEPATH 
+set(CMAKE_CONAN_OUTPUT_FOLDER "${CMAKE_BINARY_DIR}/conan-deps" CACHE FILEPATH 
   "Specify the subfolder where 'conan install' generates files inside the build directory.")
 set(CMAKE_CONAN_OUTPUT_QUIET false CACHE BOOL 
   "Disable the output message of running 'conan install' command if we set it to true.")
