@@ -1,6 +1,6 @@
 # cmake-conan-setup
 
-CMake toolchain for integration with Conan using [cmake-conan](https://github.com/conan-io/cmake-conan), [`conan-setup.cmake`](./cmake/conan-setup.cmake).
+CMake toolchain for integration with Conan using [cmake-conan](https://github.com/conan-io/cmake-conan), [`conan-setup.cmake`](./conan-setup.cmake).
 
 > NOTE:
 >
@@ -56,7 +56,7 @@ Moreover, there's an important problem that made Conan 2.X decide to deprecate c
 Users just need to do the following two things:
 
 - Prepare a conan recipe (`conanfile.txt` or `conanfile.py`) in the root source directory.
-- Specify cache variable [CMAKE_PROJECT_INCLUDE_BEFORE](https://cmake.org/cmake/help/latest/variable/CMAKE_PROJECT_INCLUDE_BEFORE.html) with [`conan-setup.cmake`](./cmake/conan-setup.cmake).
+- Specify cache variable [CMAKE_PROJECT_INCLUDE_BEFORE](https://cmake.org/cmake/help/latest/variable/CMAKE_PROJECT_INCLUDE_BEFORE.html) with [`conan-setup.cmake`](./conan-setup.cmake).
 
 And then, all the installation of dependencies will be **DONE** automatically when they configure their projects.
 
@@ -64,7 +64,7 @@ You can grab a specific version of `conan.cmake` from cmake-conan to your projec
 
 ## 2. Mechanism
 
-The idea of this project is inspired by this [article](https://www.qt.io/blog/qt-creator-cmake-package-manager-auto-setup) of Qt Blog, which introduces a custom toolchain file called `auto-setup.cmake` (You can check its content [here](https://code.qt.io/cgit/qt-creator/qt-creator.git/plain/src/share/3rdparty/package-manager/auto-setup.cmake)). After simplifying the file and replacing the old APIs of cmake-conan with the new one into [`conan-setup.cmake`](./cmake/conan-setup.cmake), there are 4 steps of the mechanism:
+The idea of this project is inspired by this [article](https://www.qt.io/blog/qt-creator-cmake-package-manager-auto-setup) of Qt Blog, which introduces a custom toolchain file called `auto-setup.cmake` (You can check its content [here](https://code.qt.io/cgit/qt-creator/qt-creator.git/plain/src/share/3rdparty/package-manager/auto-setup.cmake)). After simplifying the file and replacing the old APIs of cmake-conan with the new one into [`conan-setup.cmake`](./conan-setup.cmake), there are 4 steps of the mechanism:
 
 1. Include `conan.cmake` and scan for conan recipes in the root source directory.
 2. Create a new `CMakeLists.txt`, in which APIs of cmake-conan are used, by calling `file(WRITE)`.
@@ -75,7 +75,7 @@ Therefore, we can include `conan_toolchain.cmake` **BEFORE** the invocation of t
 
 ## 3. Cache Variables
 
-There are some default or custom variables that will take effect in [`conan-setup.cmake`](./cmake/conan-setup.cmake).
+There are some default or custom variables that will take effect in [`conan-setup.cmake`](./conan-setup.cmake).
 
 | Cache Variables                                                                                       | Default Value</br>(if not specified) | Effects                                                                                                                                            |
 | ----------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

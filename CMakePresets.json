@@ -27,7 +27,7 @@
       "description": "Using MSVC x64 compilers with \"Ninja\" generator on Windows - Debug",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -38,7 +38,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -48,7 +48,7 @@
       "description": "Using MSVC x64 compilers with \"Ninja\" generator on Windows - Release",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -59,7 +59,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -69,7 +69,7 @@
       "description": "Using MSVC x64 compilers with \"NMake Makefiles\" generator on Windows - Debug",
       "generator": "NMake Makefiles",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -80,7 +80,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -90,7 +90,7 @@
       "description": "Using MSVC x64 compilers with \"NMake Makefiles\" generator on Windows - Release",
       "generator": "NMake Makefiles",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -101,7 +101,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -111,7 +111,7 @@
       "description": "Using MSVC x64 compilers with \"Ninja Multi-Config\" generator on Windows",
       "generator": "Ninja Multi-Config",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -121,7 +121,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -133,7 +133,7 @@
       "toolset": "v142,host=x64",
       "architecture": "x64",
       "cacheVariables": {
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -143,7 +143,7 @@
       "description": "Using MSVC x86 compilers with \"Ninja\" generator on Windows - Debug",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -154,7 +154,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -164,7 +164,7 @@
       "description": "Using MSVC x86 compilers with \"Ninja\" generator on Windows - Release",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -175,7 +175,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -185,7 +185,7 @@
       "description": "Using MSVC x86 compilers with \"NMake Makefiles\" generator on Windows - Debug",
       "generator": "NMake Makefiles",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -196,7 +196,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -206,7 +206,7 @@
       "description": "Using MSVC x86 compilers with \"NMake Makefiles\" generator on Windows - Release",
       "generator": "NMake Makefiles",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -217,7 +217,7 @@
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -227,7 +227,7 @@
       "description": "Using MSVC x86 compilers with \"Ninja Multi-Config\" generator on Windows",
       "generator": "Ninja Multi-Config",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -237,7 +237,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "cl.exe",
         "CMAKE_CXX_COMPILER": "cl.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -249,7 +249,7 @@
       "toolset": "v142,host=x86",
       "architecture": "Win32",
       "cacheVariables": {
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -265,7 +265,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -281,7 +281,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -297,7 +297,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -313,7 +313,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -328,7 +328,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -344,7 +344,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -360,7 +360,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -376,7 +376,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -392,7 +392,7 @@
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -407,7 +407,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "gcc.exe",
         "CMAKE_CXX_COMPILER": "g++.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -417,7 +417,7 @@
       "description": "Using ClangCL x64 compiler with \"Ninja\" geneartor on Windows - Debug",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -431,7 +431,7 @@
         "CMAKE_C_COMPILER": "clang-cl.exe",
         "CMAKE_CXX_COMPILER": "clang-cl.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -441,7 +441,7 @@
       "description": "Using ClangCL x64 compiler with \"Ninja\" geneartor on Windows - Release",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -455,7 +455,7 @@
         "CMAKE_C_COMPILER": "clang-cl.exe",
         "CMAKE_CXX_COMPILER": "clang-cl.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -465,7 +465,7 @@
       "description": "Using ClangCL x64 compiler with \"Ninja Multi-Config\" geneartor on Windows",
       "generator": "Ninja Multi-Config",
       "toolset": {
-        "value": "host=x64",
+        "value": "v142,host=x64",
         "strategy": "external"
       },
       "architecture": {
@@ -478,7 +478,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "clang-cl.exe",
         "CMAKE_CXX_COMPILER": "clang-cl.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -488,7 +488,7 @@
       "description": "Using ClangCL x86 compiler with \"Ninja\" geneartor on Windows - Debug",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -502,7 +502,7 @@
         "CMAKE_C_COMPILER": "clang-cl.exe",
         "CMAKE_CXX_COMPILER": "clang-cl.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -512,7 +512,7 @@
       "description": "Using ClangCL x86 compiler with \"Ninja\" geneartor on Windows - Release",
       "generator": "Ninja",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -526,7 +526,7 @@
         "CMAKE_C_COMPILER": "clang-cl.exe",
         "CMAKE_CXX_COMPILER": "clang-cl.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -536,7 +536,7 @@
       "description": "Using ClangCL x86 compiler with \"Ninja Multi-Config\" geneartor on Windows",
       "generator": "Ninja Multi-Config",
       "toolset": {
-        "value": "host=x86",
+        "value": "v142,host=x86",
         "strategy": "external"
       },
       "architecture": {
@@ -549,7 +549,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "clang-cl.exe",
         "CMAKE_CXX_COMPILER": "clang-cl.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -565,7 +565,7 @@
         "CMAKE_C_COMPILER": "clang.exe",
         "CMAKE_CXX_COMPILER": "clang++.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -581,7 +581,7 @@
         "CMAKE_C_COMPILER": "clang.exe",
         "CMAKE_CXX_COMPILER": "clang++.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -596,7 +596,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "clang.exe",
         "CMAKE_CXX_COMPILER": "clang++.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -612,7 +612,7 @@
         "CMAKE_C_COMPILER": "clang.exe",
         "CMAKE_CXX_COMPILER": "clang++.exe",
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -628,7 +628,7 @@
         "CMAKE_C_COMPILER": "clang.exe",
         "CMAKE_CXX_COMPILER": "clang++.exe",
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     },
     {
@@ -643,7 +643,7 @@
       "cacheVariables": {
         "CMAKE_C_COMPILER": "clang.exe",
         "CMAKE_CXX_COMPILER": "clang++.exe",
-        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/cmake/conan-setup.cmake"
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake"
       }
     }
   ]
