@@ -1,0 +1,21 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "conan-setup",
+      "displayName": "Conan Setup configuration",
+      "description": "Settings related to conan-setup.cmake",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_PROJECT_INCLUDE_BEFORE": "${sourceDir}/conan-setup.cmake",
+        "CMAKE_CONAN_OUTPUT_QUIET": false,
+        "CMAKE_CONAN_ERROR_QUIET": false
+      }
+    }
+  ]
+}

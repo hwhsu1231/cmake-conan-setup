@@ -1,0 +1,38 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "include": [
+    "config.json",
+    "conan-setup.json"
+  ],
+  "configurePresets": [
+    {
+      "name": "win32-gcc-x64-ninja-release",
+      "displayName": "Windows GCC x64 (Ninja) Release",
+      "description": "Using GCC x64 compilers with \"Ninja\" generator on Windows - Release",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "gcc.exe",
+        "CMAKE_CXX_COMPILER": "g++.exe",
+        "CMAKE_BUILD_TYPE": "Release"
+      },
+      "inherits": [
+        "build-install-dirs",
+        "host-only-win32",
+        "env-win32-mingw64",
+        "conan-setup"
+      ]
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "win32-gcc-x64-ninja-release",
+      "displayName": "Build - Release",
+      "configurePreset": "win32-gcc-x64-ninja-release"
+    }
+  ]
+}
