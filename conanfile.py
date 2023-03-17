@@ -1,7 +1,7 @@
-from conans import ConanFile, CMake
+from conan import ConanFile
 
 class ConsumerConan(ConanFile):
-    settings = [ "os", "compiler", "build_type", "arch" ]
+    settings = "os", "compiler", "build_type", "arch"
     generators = [
         "CMakeDeps", 
         "CMakeToolchain"
