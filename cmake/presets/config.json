@@ -1,0 +1,87 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "build-install-dirs",
+      "displayName": "Set build and install directories",
+      "description": "Set build and install directories",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "installDir": "${sourceDir}/install/${presetName}"
+    },
+    {
+      "name": "host-only-win32",
+      "displayName": "Windows-only preset",
+      "description": "This preset is only available on Windows",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "name": "host-only-linux",
+      "displayName": "Linux-only configuration",
+      "description": "This build is only available on Linux",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    },
+    {
+      "name": "host-only-macos",
+      "displayName": "macOS-only preset",
+      "description": "This preset is only available on macOS",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Darwin"
+      }
+    },
+    {
+      "name": "env-win32-mingw64",
+      "displayName": "MinGW64 environment setup on Windows",
+      "description": "MinGW64 environment setup on Windows",
+      "hidden": true,
+      "environment": {
+        "PATH": "C:\\msys64\\mingw64\\bin;$penv{PATH}"
+      }
+    },
+    {
+      "name": "env-win32-mingw32",
+      "displayName": "MinGW32 environment setup on Windows",
+      "description": "MinGW32 environment setup on Windows",
+      "hidden": true,
+      "environment": {
+        "PATH": "C:\\msys64\\mingw32\\bin;$penv{PATH}"
+      }
+    },
+    {
+      "name": "env-win32-clang64-msvc",
+      "displayName": "Clang64 (MSVC) environment setup on Windows",
+      "description": "Clang64 (MSVC) environment setup on Windows",
+      "hidden": true,
+      "environment": {
+        "PATH": "C:\\Program Files\\LLVM\\bin;$penv{PATH}"
+      }
+    },
+    {
+      "name": "env-win32-clang32-msvc",
+      "displayName": "Clang32 (MSVC) environment setup on Windows",
+      "description": "Clang32 (MSVC) environment setup on Windows",
+      "hidden": true,
+      "environment": {
+        "PATH": "C:\\Program Files (x86)\\LLVM\\bin;$penv{PATH}"
+      }
+    }
+  ]
+}

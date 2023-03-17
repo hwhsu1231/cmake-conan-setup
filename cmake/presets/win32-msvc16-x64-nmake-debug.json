@@ -1,0 +1,45 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "include": [
+    "config.json",
+    "conan-setup.json"
+  ],
+  "configurePresets": [
+    {
+      "name": "win32-msvc16-x64-nmake-debug",
+      "displayName": "Windows MSVC16 x64 (NMake Makefiles) Debug",
+      "description": "Using MSVC16 x64 compilers with \"NMake Makefiles\" generator on Windows - Debug",
+      "generator": "NMake Makefiles",
+      "toolset": {
+        "value": "v142,host=x64",
+        "strategy": "external"
+      },
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "cl.exe",
+        "CMAKE_CXX_COMPILER": "cl.exe",
+        "CMAKE_BUILD_TYPE": "Debug"
+      },
+      "inherits": [
+        "build-install-dirs",
+        "host-only-win32",
+        "conan-setup"
+      ]
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "win32-msvc16-x64-nmake-debug",
+      "displayName": "Build - Debug",
+      "configurePreset": "win32-msvc16-x64-nmake-debug"
+    }
+  ]
+}

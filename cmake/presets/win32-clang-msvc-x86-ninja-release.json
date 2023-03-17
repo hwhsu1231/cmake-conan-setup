@@ -1,0 +1,38 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "include": [
+    "config.json",
+    "conan-setup.json"
+  ],
+  "configurePresets": [
+    {
+      "name": "win32-clang-msvc-x86-ninja-release",
+      "displayName": "Windows Clang-MSVC x86 (Ninja) Release",
+      "description": "Using Clang-MSVC x86 compilers with \"Ninja\" generator on Windows - Release",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang.exe",
+        "CMAKE_CXX_COMPILER": "clang++.exe",
+        "CMAKE_BUILD_TYPE": "Release"
+      },
+      "inherits": [
+        "build-install-dirs",
+        "host-only-win32",
+        "env-win32-clang64-msvc",
+        "conan-setup"
+      ]
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "win32-clang-msvc-x86-ninja-release",
+      "displayName": "Build - Release",
+      "configurePreset": "win32-clang-msvc-x86-ninja-release"
+    }
+  ]
+}

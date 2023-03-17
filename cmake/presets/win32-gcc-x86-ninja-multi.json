@@ -1,0 +1,42 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "include": [
+    "config.json",
+    "conan-setup.json"
+  ],
+  "configurePresets": [
+    {
+      "name": "win32-gcc-x86-ninja-mutli",
+      "displayName": "Windows GCC x86 (Ninja Multi-Config)",
+      "description": "Using GCC x86 compilers with \"Ninja Multi-Config\" generator on Windows",
+      "generator": "Ninja Multi-Config",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "gcc.exe",
+        "CMAKE_CXX_COMPILER": "g++.exe"
+      },
+      "inherits": [
+        "build-install-dirs",
+        "host-only-win32",
+        "env-win32-mingw32",
+        "conan-setup"
+      ]
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "win32-gcc-x86-ninja-multi-debug",
+      "displayName": "Build - Debug",
+      "configurePreset": "win32-gcc-x86-ninja-mutli"
+    },
+    {
+      "name": "win32-gcc-x86-ninja-multi-release",
+      "displayName": "Build - Release",
+      "configurePreset": "win32-gcc-x86-ninja-mutli"
+    }
+  ]
+}
